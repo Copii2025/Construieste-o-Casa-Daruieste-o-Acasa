@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Construiește o Casă - Dăruiește o Acasă</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Construiește o Casă - Dăruiește o Acasă</h1>
+    <p>Ajutor Reciproc pentru o Casă a Ta 🏡</p>
+  </header>
+
+  <main>
+    <section class="cotizatii">
+      <h2>Alege Cotizația Lunară</h2>
+      <div class="planuri">
+        <div class="plan">
+          <h3>20€</h3>
+          <p>Contribuție minimă</p>
+          <p>Sprijini comunitatea lunar</p>
+        </div>
+        <div class="plan recomandat">
+          <h3>60€</h3>
+          <p>Contribuție recomandată</p>
+          <p>Acces mai rapid la fond</p>
+        </div>
+        <div class="plan">
+          <h3>100€</h3>
+          <p>Contribuție maximă</p>
+          <p>Sprijin prioritar pentru tine</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="formular">
+      <h2>📝 Înscrie-te acum</h2>
+      <form id="formInregistrare">
+        <label>Nume complet:
+          <input type="text" name="nume" required>
+        </label>
+        <label>Email:
+          <input type="email" name="email" required>
+        </label>
+        <label>Telefon:
+          <input type="tel" name="telefon" required>
+        </label>
+        <label>Alege cotizația:
+          <select name="cotizatie" required>
+            <option value="">Selectează...</option>
+            <option value="20">20€</option>
+            <option value="60">60€</option>
+            <option value="100">100€</option>
+          </select>
+        </label>
+        <button type="submit">Trimite înscrierea</button>
+      </form>
+      <div id="multumim" style="display:none;">
+        <h3>✅ Înscriere trimisă cu succes!</h3>
+        <p>Te vom contacta în curând.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>contact@construiesteocasa.ro | WhatsApp: 07xx xxx xxx</p>
+    <p>© 2025 Construiește o Casă</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
